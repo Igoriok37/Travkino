@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Start</title>
+</head>
+
+<body>
+  <section class="hero" style="background-image: url(../images/hero-bg.webp);">
+    <div class="hero__inner container">
+      <header class="header">
+        <div class="header__inner">
+          <a class="header__logo logo" href="/">
+            <img class="logo__image" src="./images/logo_village.webp" alt="Logo" width="136" height="60">
+          </a>
+          <div class="header__center">
+            <a class="header__phone" href="tel:+79093109077">+7 909 310-90-77</a>
+            <a class="header__consult hidden-tablet" href="/">нужна консультация</a>
+          </div>
+          <div class="header__right">
+            <a class="header__find hidden-tablet" href="/">Узнать о свободных участках</a>
+            <a class="header__select hidden-mobile-m" href="/">Подобрать участок</a>
+            <button class="button__burger-menu burger-button" type="button" onclick="mobileOverlay.showModal()">
+
+              <span>
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="4" cy="4" r="3.5" stroke="#F4EEE6" />
+                </svg>
+              </span>
+              <span>
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="4" cy="4" r="3.5" stroke="#F4EEE6" />
+                </svg>
+              </span>
+              <span>
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="4" cy="4" r="3.5" stroke="#F4EEE6" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+      </header>
+      <div class="hero__body">
+        <h1 class="hero__title-hidden vizible-desktop">земельный участок</h1>
+        <div class="hero__glass">
+          <h1 class="hero__title hidden-desktop">земельный участ<span><svg width="30" height="112" viewBox="0 0 30 112"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="14.5" fill="#D4EE45" stroke="#D4EE45" />
+                <path
+                  d="M13.5858 111.414C14.3668 112.195 15.6332 112.195 16.4142 111.414L29.1421 98.6863C29.9232 97.9052 29.9232 96.6389 29.1421 95.8579C28.3611 95.0768 27.0948 95.0768 26.3137 95.8579L15 107.172L3.68629 95.8579C2.90524 95.0768 1.63891 95.0768 0.857862 95.8579C0.0768127 96.6389 0.0768126 97.9052 0.857861 98.6863L13.5858 111.414ZM15 30L13 30L13 110L15 110L17 110L17 30L15 30Z"
+                  fill="#D4EE45" />
+              </svg>о</span>
+            <p>к</p>
+          </h1>
+
+          <div class="hero__subtitle">
+            <p id="fw500">множество возможностей: </p>
+            <p id="italic">для дома, для бизнеса, для будущего</p>
+          </div>
+          <button class="hero__btn next-btn button" id="openFormModalBtn3">Подобрать
+            <img src="./images/svg/arrow.svg" alt="">
+          </button>
+        </div>
+        <ul class="hero__list">
+          <li class="hero__item">
+            <h2 class="hero__item-title">Участки в Травкино Village</h2>
+            <div class="hero__item-description">Ощущение простора и свободы</div>
+          </li>
+          <li class="hero__item">
+            <img class="hero__item-image" src="./images/icons/Growing Plant.png" alt="Growing Plant" width="50"
+              height="50">
+            <div class="hero__item-description">Хорошая экология и прекрасные условия для здорового образа жизни всей
+              семьи</div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+  <div class="banner-blue container section">
+    <ul class="banner-blue__list">
+      <li class="banner-blue__item">
+        <span>20</span>
+        минут
+        <br>езды до Казани
+      </li>
+      <li class="banner-blue__item">
+        <span>625</span>
+        участков
+        <br>под застройку
+      </li>
+      <li class="banner-blue__item">
+        <p>от</p>
+        <span>10</span>
+        соток
+        <br>площади участков
+      </li>
+
+    </ul>
+  </div>
+  <section class="steps container section">
+    <div class="multi-step__inner">
+      <form class="multi-step-form" id="staticMultiStepForm">
+        <div class="form__above-title">
+          <p>Ответьте на вопросы</p>
+        </div>
+        <h2 class="form__title">и получите список свободных земельных участков</h2>
+        <!-- Прогресс-бар -->
+        <div class="progress-bar">
+          <div class="step step--long active">1</div>
+          <div class="step">2</div>
+          <div class="step">3</div>
+          <div class="step">4</div>
+          <div class="step">5</div>
+          <div class="step visually-hidden">6</div>
+
+        </div>
+
+        <!-- Шаг 1 -->
+        <div class="step-content active" id="step1">
+          <h3 class="step-content__title">Выберите тип участка</h3>
+          <div class="options">
+            <label><input class="radio" type="radio" name="full" value="all" required checked>с коммуникациями</label>
+            <label><input class="radio" type="radio" name="full" value="less">до границ участка</label>
+          </div>
+          <div class="buttons">
+            <button class="next-btn">Далее
+              <span>
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="45" height="45" rx="22.5" fill="#381819" />
+                  <path
+                    d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                    fill="white" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Шаг 2 -->
+        <div class="step-content" id="step2">
+          <h3 class="step-content__title">Какого размера участок вам необходим?</h3>
+          <div class="options">
+            <label><input type="radio" name="size" value="10" required checked> 10 соток</label>
+            <label><input type="radio" name="size" value="10-20"> от 10 до 20 соток</label>
+            <label><input type="radio" name="size" value="20+"> Более 20 соток</label>
+          </div>
+          <div class="buttons">
+            <button class="prev-btn">
+              <span>
+                <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.146446 4.03553C-0.0488148 3.84027 -0.0488148 3.52369 0.146446 3.32842L3.32843 0.146442C3.52369 -0.0488198 3.84027 -0.0488198 4.03553 0.146442C4.2308 0.341705 4.2308 0.658287 4.03553 0.853549L1.20711 3.68198L4.03553 6.5104C4.2308 6.70567 4.2308 7.02225 4.03553 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751L0.146446 4.03553ZM25.5 3.68198V4.18198L0.5 4.18198V3.68198V3.18198L25.5 3.18198V3.68198Z"
+                    fill="#381819" />
+                </svg>
+              </span>
+            </button>
+            <button class="next-btn">Далее
+              <span>
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="45" height="45" rx="22.5" fill="#381819" />
+                  <path
+                    d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                    fill="white" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <!-- Шаг 3 -->
+        <div class="step-content" id="step3">
+          <h3 class="step-content__title">Возможность покупки сразу нескольких участков рядом друг с другом</h3>
+          <div class="options">
+            <label><input type="radio" name="multiple" value="yes" required checked> Да</label>
+            <label><input type="radio" name="multiple" value="no"> Нет</label>
+          </div>
+          <div class="buttons">
+            <button class="prev-btn">
+              <span>
+                <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.146446 4.03553C-0.0488148 3.84027 -0.0488148 3.52369 0.146446 3.32842L3.32843 0.146442C3.52369 -0.0488198 3.84027 -0.0488198 4.03553 0.146442C4.2308 0.341705 4.2308 0.658287 4.03553 0.853549L1.20711 3.68198L4.03553 6.5104C4.2308 6.70567 4.2308 7.02225 4.03553 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751L0.146446 4.03553ZM25.5 3.68198V4.18198L0.5 4.18198V3.68198V3.18198L25.5 3.18198V3.68198Z"
+                    fill="#381819" />
+                </svg>
+              </span>
+            </button>
+            <button class="next-btn">Далее
+              <span>
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="45" height="45" rx="22.5" fill="#381819" />
+                  <path
+                    d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                    fill="white" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Шаг 4 -->
+        <div class="step-content" id="step4">
+          <h3 class="step-content__title">Какой бюджет выделяете на покупку участка?</h3>
+          <div class="options">
+            <label><input type="radio" name="budget" value="3m" required checked> от 3 млн.р.</label>
+            <label><input type="radio" name="budget" value="3-5m"> от 3 до 5 млн.р.</label>
+            <label><input type="radio" name="budget" value="5m+"> Более 5 млн.р.</label>
+          </div>
+          <div class="buttons">
+            <button class="prev-btn">
+              <span>
+                <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.146446 4.03553C-0.0488148 3.84027 -0.0488148 3.52369 0.146446 3.32842L3.32843 0.146442C3.52369 -0.0488198 3.84027 -0.0488198 4.03553 0.146442C4.2308 0.341705 4.2308 0.658287 4.03553 0.853549L1.20711 3.68198L4.03553 6.5104C4.2308 6.70567 4.2308 7.02225 4.03553 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751L0.146446 4.03553ZM25.5 3.68198V4.18198L0.5 4.18198V3.68198V3.18198L25.5 3.18198V3.68198Z"
+                    fill="#381819" />
+                </svg>
+              </span>
+            </button>
+            <button class="next-btn">Далее
+              <span>
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="45" height="45" rx="22.5" fill="#381819" />
+                  <path
+                    d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                    fill="white" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Шаг 5 -->
+        <div class="step-content" id="step5">
+          <h3 class="step-content__title">Когда планируете приобретение участка?</h3>
+          <div class="options">
+            <label><input type="radio" name="timeframe" value="soon" required checked> в ближайшее время</label>
+            <label><input type="radio" name="timeframe" value="3m"> в течение 3 месяцев</label>
+            <label><input type="radio" name="timeframe" value="year"> в течение года</label>
+          </div>
+          <div class="buttons">
+            <button class="prev-btn">
+              <span>
+                <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.146446 4.03553C-0.0488148 3.84027 -0.0488148 3.52369 0.146446 3.32842L3.32843 0.146442C3.52369 -0.0488198 3.84027 -0.0488198 4.03553 0.146442C4.2308 0.341705 4.2308 0.658287 4.03553 0.853549L1.20711 3.68198L4.03553 6.5104C4.2308 6.70567 4.2308 7.02225 4.03553 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751L0.146446 4.03553ZM25.5 3.68198V4.18198L0.5 4.18198V3.68198V3.18198L25.5 3.18198V3.68198Z"
+                    fill="#381819" />
+                </svg>
+              </span>
+            </button>
+            <button class="next-btn">Далее
+              <span>
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="45" height="45" rx="22.5" fill="#381819" />
+                  <path
+                    d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                    fill="white" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Шаг 6 (финальный) -->
+        <div class="step-content step-content--final" id="step6">
+          <div class="final__above-title">
+            <p>Благодарим за ответы!</p>
+          </div>
+          <h2 class=" final__title">Мы подготовим для Вас земельные участки <br>по наилучшим ценам. </h2>
+            <div class="final__description">
+              <p>Оставьте свои контактные данные, чтобы мы могли
+                прислать <br> Вам все варианты.</p>
+            </div>
+            <div class="contact-form">
+              <div class="contact-form__inner">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <button class="submit-btn">Получить
+                  <span>
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="45" height="45" rx="22.5" fill="#381819" />
+                      <path
+                        d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+
+              <label class="agreement"><input class="checkbox" type="checkbox" name="yes" required> Я соглашаюсь с
+                условиями
+                <a class="policy" href="/">обработки персональных данных</a></label>
+            </div>
+            <div class="final__bottom">
+              <p>
+                Выбирая <span>Травкино Village,</span> вы выбираете комфорт, экологию
+                <br>и свободу от городских стрессов!
+              </p>
+            </div>
+          </div>
+
+      </form>
+    </div>
+
+    <img class="steps__image hidden-desktop" src="./images/steps.webp" alt="">
+    <div class="steps__list">
+      <div class="steps__item" id="item-1">
+        <h3 class="steps__title">Покупка
+          земельного частка
+        </h3>
+        <p>
+          это взвешенное решение для тех, кто думает наперёд.
+          Земля — ресурс,
+          а стоимость ее стабильно растет. </p>
+      </div>
+      <div class="steps__item" id="item-2">
+        <h3 class="steps__title">Сегодня вы создаете платформу для комфортной жизни, завтра —
+        </h3>
+        <p>
+          получаете надёжный актив с реальной прибылью. Это ваш финансовый тыл и защита от инфляции.</p>
+      </div>
+    </div>
+  </section>
+  <section class="location container section">
+    <div class="location__inner">
+      <div class="location__info">
+        <div class="location__above-title">Коттеджный посёлок </div>
+        <h2 class="location__title">Травкино Village</h2>
+        <div class="location__description">
+          <p>Расположен в окружении зелёных насаждений и небольших лесных участков. Проводите больше времени на свежем
+            воздухе и почувствуйте уверенный, спокойный ритм повседневной жизни.</p>
+        </div>
+        <div class="location__list">
+          <div class="location__item">
+            <div class="location__top">
+              <span></span>
+              <span id="light"></span>
+
+            </div>
+            <p><span>Мы уделили особое внимание транспортной логистике:</span> ровные, широкие подъездные пути и
+              грамотные развязки
+              обеспечивают комфортный ежедневный проезд на личном автотранспорте.</p>
+          </div>
+          <div class="location__item">
+            <div class="location__top">
+              <span></span>
+              <span></span>
+
+            </div>
+            <p><span>Уникальная атмосфера естественной среды</span> позволит насладиться всеми преимуществами загородной
+              жизни,
+              сохранив при этом связь с центром города.</p>
+          </div>
+        </div>
+      </div>
+      <img class="location__image hidden-mobile-s" src="./images/location.webp" width="748" height="629" alt="Location">
+      <img class="location__image-mobile vizible-mobile-s" src="./images/location-mobile.webp" width="409" height="273"
+        alt="Location">
+    </div>
+  </section>
+  <section class="plan container section">
+    <div class="plan__inner">
+      <div class="plan__above-title f30">Генплан Травкино Village</div>
+    </div>
+    <h2 class="plan__title f50">Карта с участками</h2>
+    <img class="plan__image" src="./images/plan.webp" width="1521" height="693" alt="Map">
+  </section>
+  <section class="for container section">
+    <div class="for__title f50">Для кого</div>
+    <div class="for__grid">
+      <div class="for__col">
+        <div class="for__row-1">
+          <img class="for__image" src="./images/for/1.webp" alt="">
+          <p>Для мечтающих
+            <br>о гармонии
+            <br>с окружающим миром
+          </p>
+        </div>
+        <div class="for__row-2">
+          <div class="for__row-col">
+            <img class="for__image" src="./images/for/2.webp" alt="">
+            <p>Для ценящих
+              <br>свежий воздух,
+              <br>тишину и просторы
+            </p>
+          </div>
+          <div class="for__row-col">
+            <img class="for__image" src="./images/for/3.webp" alt="">
+            <p>Для активных людей,
+              <br>вдохновляющихся
+              <br>природой
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="for__col">
+        <div class="for__row-2">
+          <div class="for__row-col">
+            <img class="for__image" src="./images/for/4.webp" alt="">
+            <p>Для молодых семей,
+              <br>стремящихся создать
+              <br>свой уют и безопасность
+            </p>
+          </div>
+          <div class="for__row-col">
+            <img class="for__image" src="./images/for/5.webp" alt="">
+            <p>Для предпринимателей
+              <br>и застройщиков,
+              <br>создающих будущее
+            </p>
+          </div>
+        </div>
+        <div class="for__row-1">
+          <img class="for__image" src="./images/for/6.webp" alt="">
+          <p>Для инвесторов, ищущих
+            <br>надежные инструменты
+            <br>вложения
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="select container section">
+    <div class="select__inner"
+      style="background-image: url(./images/select-inner.webp);  background-repeat: no-repeat; ">
+      <div class="select__form">
+        <h2 class="select__title f50">Выберите участок</h2>
+        <div class="select__subtitle f30">Позвольте себе больше, чем просто землю —
+          <br>создайте свою историю под открытым
+          небом! 
+        </div>
+        <form class="select__form-inner">
+          <div class="select__form-title">Позвольте нам помочь вам начать.</div>
+          <div class="select__form-subtitle">Заполните форму ниже, и наш куратор с радостью
+            расскажет вам все подробности</div>
+          <div class="select__form-fields">
+            <div class="select__form-field">
+              <label class="select__form-label visually-hidden" for="name"></label>
+              <input class="select__form-input input" id="name" name="name" placeholder="Имя">
+            </div>
+            <div class="select__form-field">
+              <label class="select__form-label visually-hidden" for="phone"></label>
+              <input class="select__form-input input" id="phone" name="phone" placeholder="Телефон">
+            </div>
+          </div>
+          <label class="select__agreement agreement">
+            <input class="checkbox" type="checkbox" name="yes" required> Я соглашаюсь с
+            условиями
+            <a class="policy" href="/">обработки персональных данных</a></label>
+          <button class="select__button button" id="openFormModalBtn1">
+            Выбрать участок
+            <span>
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="45" height="45" rx="22.5" fill="#381819" />
+                <path
+                  d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                  fill="white" />
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+      <div class="select__right">
+        <img class="select__image" src="./images/select.webp" alt="">
+        <div class="select__blur">Земельный участок в Травкино Village — это возможность воплотить собственные мечты,
+          ощутить гармонию
+          с природой и сделать разумное вложение в свое
+          будущее.</div>
+      </div>
+    </div>
+    <div class="select__banner"
+      style="background-image: url(./images/banner-green.webp);  background-repeat: no-repeat; ">
+      <div class="select__banner-header">
+        <img src="./images/select/1.png" width="50" height="50" alt="">
+        <div class="select__banner-title">Откройте новые перспективы роста.
+        </div>
+      </div>
+      <ul class="select__banner-list" style="display: flex; ">
+        <li class="select__banner-item">
+          <p>Строить больше — зарабатывать больше!
+            Ваш плацдарм
+            для масштабных идей</p>
+        </li>
+        <li class="select__banner-item">
+          <img src="./images/select/2.png" width="50" height="50" alt="">
+          <p>Хорошая экология и отличные возможности для здорового образа жизни всей семьи</p>
+        </li>
+        <li class="select__banner-item">
+          <img src="./images/select/3.png" width="50" height="50" alt="">
+          <p>Когда дом начинается с земли.
+            На участке легко построить дом, устроить огород
+            или площадку для барбекю </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="bicolor container section">
+    <div class="bicolor__inner">
+      <div class="bicolor__grid">
+        <div class="bicolor__col">
+          <div class="bicolor__col-row" style="background-color: #381819;">
+            <div class="bicolor__col-header">
+              <img class="bicolor__col-image" src="./images/bicolor/1.png" alt="">
+              <h3 class="bicolor__col-title">Инфраструктура</h3>
+            </div>
+            <div class="bicolor__col-description">
+              План развития территории - это продуманная концепция загородной жизни вблизи
+              и единении с природой.
+            </div>
+            <div class="bicolor__col-body">
+              <p>На территории Травкино Village предусмотрены:</p>
+              <ul class="bicolor__col-list">
+                <li class="bicolor__col-item">
+                  Детские площадки
+                </li>
+                <li class="bicolor__col-item">
+                  Детский сад и школа
+                </li>
+                <li class="bicolor__col-item">
+                  Магазины</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bicolor__col">
+          <div class="bicolor__col-row" style="background-color: #381819;">
+            <div class="bicolor__col-header">
+              <img class="bicolor__col-image" src="./images/bicolor/2.png" alt="">
+              <h3 class="bicolor__col-title">Расположение</h3>
+            </div>
+            <div class="bicolor__col-description">Природа рядом, город близко. Ваш уголок спокойствия в пригороде
+              мегаполиса</div>
+          </div>
+          <div class="bicolor__col-row" id="order" style="background-color: #d4ee45; color: #000;">
+            <div class="bicolor__col-header">
+              <img class="bicolor__col-image" src="./images/bicolor/3.png" alt="">
+              <h3 class="bicolor__col-title">Транспортная доступность</h3>
+            </div>
+            <div class="bicolor__col-description">Удобные транспортные связи стирают границы. Ваш участок — это не
+              удаленное убежище,
+              а гармоничная точка на карте, откуда вы легко
+              и быстро доберетесь до работы, встреч
+              или культурных событий города</div>
+          </div>
+        </div>
+        <div class="bicolor__col">
+          <div class="bicolor__col-row" style="background-color: #d4ee45; color: #000;">
+            <div class="bicolor__col-header">
+              <img class="bicolor__col-image" src="./images/bicolor/4.png" alt="">
+              <h3 class="bicolor__col-title">Коммуникации</h3>
+            </div>
+            <div class="bicolor__col-description">Забота о необходимом в единении с природой.
+              К участкам подведены газ и электричество. Вдоль улиц установлены современные столбы освещения.</div>
+          </div>
+          <div class="bicolor__col-row" style="background-color: #381819;">
+            <div class="bicolor__col-header">
+              <img class="bicolor__col-image" src="./images/bicolor/5.png" alt="">
+              <h3 class="bicolor__col-title">Особенность проекта</h3>
+            </div>
+            <div class="bicolor__col-description">Все жители имеют возможность построить свою мечту на участке земли и
+              создать уникальный интерьер своего жилища</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="variants container section">
+    <div class="variants__inner">
+      <h2 class="variants__title">Варианты подбора участка</h2>
+      <div class="variants__grid">
+        <div class="variants__col">
+          <img class="variants__image" src="./images/variants/1.webp" alt="">
+          <div class="variants__info">
+            <h3 class="variants__info-title">Участки для жизни</h3>
+            <p>Земельный участок с подведенными коммуникациями.</p>
+            <p> Земля отлично подойдёт для организации жилого или дачного пространства:
+              есть возможность построить дом, баню, гараж и другие надворные постройки.</p>
+            <a class="variants__button button" href="/">Узнать подробнее
+              <img src="./images/svg/arrow.svg" alt="">
+            </a>
+          </div>
+
+        </div>
+        <div class="variants__col">
+          <img class="variants__image" src="./images/variants/2.webp" alt="">
+          <div class="variants__info">
+            <h3 class="variants__info-title">Участки под застройку</h3>
+            <p>Земельные участки для застройщиков.
+            </p>
+            <p> Покупая несколько участков, вы получаете гибкость решений: создавать несколько объектов, реализовывать
+              инвестиционные проекты или продавать участки по мере роста их стоимости. </p>
+            <a class="variants__button button" href="/">Узнать подробнее
+              <img src="./images/svg/arrow.svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="banner-blue-2 container section">
+    <ul class="banner-blue-2__list" style="backdrop-filter: blur(40px); background: #c2e9f7;">
+      <li class="banner-blue-2__item">
+        <span>900</span>тысяч
+        <p>квадратных метров - </p>
+        <p>общая площадь Травкино Village</p>
+      </li>
+      <li class="banner-blue-2__item">
+        <span id="ot">от</span><span>290</span>тысяч
+        <p>рублей -</p>
+        <p>стоимость 1 сотки участка</p>
+      </li>
+    </ul>
+  </div>
+  <section class="imagine container section">
+    <div class="imagine__inner" style="background-image: url(./images/imagine-bg.webp); ">
+      <div class="imagine__blur">
+        <div class="imagine__points">
+          <span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#D4EE45" />
+            </svg>
+          </span>
+          <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12.5" cy="12.5" r="12.5" fill="#D4EE45" />
+            </svg>
+          </span>
+          <span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#D4EE45" />
+            </svg>
+          </span>
+        </div>
+        <div class="imagine__info">
+          <div class="imagine__dark">
+            Представьте,
+          </div>
+          <span style="margin-bottom: 60px;">как вы вдыхаете чистый, наполненный свежестью воздух. </span>
+          <p>Вы слышите, как поют птицы, </p>
+          <span style="margin-bottom: 20px;">а вокруг </span>
+          <p>только природа, спокойствие
+            и пространство для ваших идей. </p>
+          <button class="imagine__button button" id="openFormModalBtn2">Выбрать участок
+            <img src="./images/svg/arrow.svg" alt="">
+          </button>
+        </div>
+      </div>
+      <ul class="imagine__list hidden-tablet">
+        <li class="imagine__item" style="background-color: #c2e9f7;">
+          <div class="imagine__item-rect">
+            <span></span>
+            <span style="background-color :#d4ee45;"></span>
+          </div>
+          <p>Земельный участок
+            в Травкино Village —
+            это гораздо больше, чем просто земля.</p>
+        </li>
+        <li class="imagine__item" style="background-color: #63b77b;">
+          <div class="imagine__item-rect">
+            <span></span>
+            <span></span>
+          </div>
+          <p>Это точка опоры
+            для будущих историй вашей семьи,
+            вашей свободы
+            и инвестиций.</p>
+        </li>
+      </ul>
+    </div>
+    <ul class="imagine__list vizible-tablet">
+      <li class="imagine__item" style="background-color: #c2e9f7;">
+        <div class="imagine__item-rect">
+          <span></span>
+          <span style="background-color :#d4ee45;"></span>
+        </div>
+        <p>Земельный участок
+          в Травкино Village —
+          это гораздо больше, чем просто земля.</p>
+      </li>
+      <li class="imagine__item" style="background-color: #63b77b;">
+        <div class="imagine__item-rect">
+          <span></span>
+          <span></span>
+        </div>
+        <p>Это точка опоры
+          для будущих историй вашей семьи,
+          вашей свободы
+          и инвестиций.</p>
+      </li>
+    </ul>
+  </section>
+  <section class="change container section">
+    <div class="change__inner">
+      <div class="change__blue" style="background: #c2e9f7;">
+        <h2 class="change__title">Готовы к переменам?</h2>
+        <div class="change__subtitle">Проверьте, подходит ли вам жизнь
+          в гармонии с природой.</div>
+        <div class="change__description">
+          <p> Ведь нет ничего лучше, чем возможность создать пространство по своему вкусу в окружении природы. </p>
+          <span>Свой участок — это ваше личное место силы</span>
+          <p>и уединение от городской суеты. Здесь вы устраиваете уютный уголок для отдыха, игры с детьми на чистом
+            воздухе или посиделки с друзьями на закате. </p>
+          <p> Пусть ваше завтра начинается с гармонии с собой
+            и природой.</p>
+        </div>
+      </div>
+      <div class="change__braun" style="background: #381819;">
+        <ul class="change__col">
+          <li class="change__row">
+            <img class="change__icon" src="./images/change/1.png" width="50" height="50" alt="">
+            <p>Наличие необходимой инфраструктуры для жизни</p>
+          </li>
+          <li class="change__row">
+            <img class="change__icon" src="./images/change/2.png" width="50" height="50" alt="">
+            <p>Возможность быстрого подключения ко всем необходимым коммуникациям</p>
+          </li>
+          <li class="change__row">
+            <img class="change__icon" src="./images/change/3.png" width="50" height="50" alt="">
+            <p>Высококачественная инженерия создаёт условия для жизни семьи любого состава</p>
+          </li>
+        </ul>
+        <ul class="change__col">
+          <li class="change__row">
+            <img class="change__icon" src="./images/change/4.png" width="50" height="50" alt="">
+            <p>Возможность круглогодичного проживания</p>
+          </li>
+          <li class="change__row">
+            <img class="change__icon" src="./images/change/5.png" width="50" height="50" alt="">
+            <p>Близость к природе позволяет проводить свободное время активно и интересно</p>
+          </li>
+          <li class="change__row">
+            <img class="change__icon" src="./images/change/6.png" width="50" height="50" alt="">
+            <p>Постоянно растущие инвестиции в недвижимость</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="review  section">
+    <div class="review__inner">
+      <div class="review__video">
+        <h2 class="review__video-title">Видеообзор</h2>
+        <div class="review__video-subtitle">Травкино Village</div>
+        <div class="review__video-slider swiper myswiper">
+          <ul class="review__video-list swiper-wrapper">
+            <li class="review__video-item swiper-slide"><img class="rewiew__video-image" src="./images/box_video.webp"
+                alt=""></li>
+            <li class="review__video-item swiper-slide"><img class="rewiew__video-image" src="./images/box_video.webp"
+                alt=""></li>
+            <li class="review__video-item swiper-slide"><img class="rewiew__video-image" src="./images/box_video.webp"
+                alt=""></li>
+            <li class="review__video-item swiper-slide"><img class="rewiew__video-image" src="./images/box_video.webp"
+                alt=""></li>
+            <li class="review__video-item swiper-slide"><img class="rewiew__video-image" src="./images/box_video.webp"
+                alt=""></li>
+            <li class="review__video-item swiper-slide"><img class="rewiew__video-image" src="./images/box_video.webp"
+                alt=""></li>
+          </ul>
+          <div class="review__video-buttons ">
+            <button class="review__video-prev swiper-button-prev" type="button"
+              aria-label="Посмотреть предыдущий слайд">
+              <img src="./images/svg/arrow-left.svg" alt=""></button>
+            <button class="review__video-next swiper-button-next" type="button" aria-label="Посмотреть следующий слайд">
+              <img src="./images/svg/arrow-right.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="rewiew__gallery">
+        <h2 class="review__gallery-title">Видеообзор</h2>
+        <div class="review__gallery-subtitle">Травкино Village</div>
+        <div class="review__gallery-slider swiper myswiper">
+          <ul class="review__gallery-list swiper-wrapper">
+            <li class="review__gallery-item swiper-slide"><img class="rewiew__gallery-image" src="./images/gallery.webp"
+                alt=""></li>
+            <li class="review__gallery-item swiper-slide"><img class="rewiew__gallery-image" src="./images/gallery.webp"
+                alt=""></li>
+            <li class="review__gallery-item swiper-slide"><img class="rewiew__gallery-image" src="./images/gallery.webp"
+                alt=""></li>
+            <li class="review__gallery-item swiper-slide"><img class="rewiew__gallery-image" src="./images/gallery.webp"
+                alt=""></li>
+            <li class="review__gallery-item swiper-slide"><img class="rewiew__gallery-image" src="./images/gallery.webp"
+                alt=""></li>
+            <li class="review__gallery-item swiper-slide"><img class="rewiew__gallery-image" src="./images/gallery.webp"
+                alt=""></li>
+          </ul>
+          <div class="review__gallery-buttons ">
+            <button class="review__gallery-prev swiper-button-prev" type="button"
+              aria-label="Посмотреть предыдущий слайд">
+              <img src="./images/svg/arrow-left.svg" alt=""></button>
+            <button class="review__gallery-next swiper-button-next" type="button"
+              aria-label="Посмотреть следующий слайд">
+              <img src="./images/svg/arrow-right.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about container section">
+    <div class="about__inner">
+      <div class="about__blue" style="background: #c2e9f7;">
+        <h2 class="about__blue-title">О компании</h2>
+        <div class="about__blue-description">
+          <p>Открывайте новые возможности для роста, создания уникальных 
+            объектов или продажи готовой недвижимости. </p>
+        </div>
+      </div>
+      <div class="about__right" >
+        <img class="about__image" src="./images/about-bg.webp"  alt="">
+        <div class="about__info">
+          <div class="about__info-title">Позвольте себе расширяться  &#8212
+            с нами это просто и удобно.</div>
+          <ul class="about__info-list">
+            <li class="about__info-item">
+              <span></span>
+              <p>Профессиональная поддержка на всех этапах покупки</p>
+            </li>
+            <li class="about__info-item">
+              <span></span>
+              <p>Прозрачность условий сделок 
+                и договоренностей</p>
+            </li>
+            <li class="about__info-item">
+              <span></span>
+              <p>Постоянное развитие поселка 
+                и улучшение условий жизни</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="profit container section">
+    <div class="profit__inner" style="background-image: url(./images/profit-bg.webp);" >
+      <div class="profit__left">
+        <h2 class="profit__title">Покупка участка - выгодная инвестиция
+          <br><span>в ваше надежное будущее</span></h2>
+        <ul class="profit__list">
+            <li class="profit__item">
+              <img  src="./images/profit/1.png" alt="">
+              <p>Участки под застройку 
+                в окружении великолепных природных ландшафтов</p>
+            </li>
+            <li class="profit__item">
+              <img  src="./images/profit/2.png" alt="">
+              <p>Выбирая Травкино Village, 
+                вы выбираете экологию 
+                и свободу от городских стрессов</p>
+            </li>
+        </ul>
+      </div>
+      <div class="profit__bej" style="background-color: #fcf7ea;">
+        <h3 class="profit__bej-title">Оформление сделки, коммуникации 
+          и подробности работы - 
+          <br><span>дадим прозрачные ответы на самые важные вопросы</span></h3>
+          <form class="profit__form-inner">
+            
+            <div class="profit__form-subtitle">Оставьте ваши данные, и наш специалист свяжется с вами, 
+              чтобы обсудить детали</div>
+            <div class="profit__form-fields">
+              <div class="profit__form-field">
+                <label class="profit__form-label visually-hidden" for="name"></label>
+                <input class="profit__form-input input" id="name" name="name" placeholder="Имя">
+              </div>
+              <div class="profit__form-field">
+                <label class="profit__form-label visually-hidden" for="phone"></label>
+                <input class="profit__form-input input" id="phone" name="phone" placeholder="Телефон">
+              </div>
+            </div>
+            <label class="profit__agreement agreement">
+              <input class="checkbox" type="checkbox" name="yes" required> Я соглашаюсь с
+              условиями
+              <a class="policy" href="/">обработки персональных данных</a></label>
+            <button class="profit__button button" id="openFormModalBtn1">
+              Получить консультацию
+              <span>
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="45" height="45" rx="22.5" fill="#381819" />
+                  <path
+                    d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                    fill="white" />
+                </svg>
+              </span>
+            </button>
+          </form>  
+      </div>
+    </div>
+  </section>
+  <section class="address container section">
+    <div class="address__inner">
+      <div class="address__left" style="background-image: url(./images/address.webp);">
+        <address class="address__title" >
+          <p>Адрес офиса: г.Казань,</p>
+            <p>ул.Братьев Касимовых, д. 35</p>
+        </address>
+      </div>
+      <iframe class="address__map" src="https://maps.app.goo.gl/HSjLDoZnmRmuYBdY9" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__body">
+        <div class="footer__left">
+          <p>ООО “CONANT” - строительная компания</p>
+          <p>Вся информация на сайте носит справочный характер и не является публичной офертой</p>
+          <a class="footer__policy" href="/">Политика сбора персональных данных</a>
+        </div>
+        <div class="footer__right">
+          <a class="footer__phone-big" href="tel:+79093109077">+7 909 310-90-77</a>
+          <a class="footer__phone-small" href="tel:+79872631324">+7 987 263-13-24</a>
+          <div class="footer__mesendgers">
+            <a class="footer__telegram" href="/">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3063 11.1717C21.3571 10.8491 21.3211 10.5188 21.2019 10.2147C21.0828 9.91067 20.8847 9.64388 20.6281 9.44181C20.3716 9.23975 20.0658 9.10971 19.7423 9.06509C19.4187 9.02046 19.0892 9.06287 18.7875 9.18794L8.15875 13.5817C6.81125 14.1392 7.00875 16.1067 8.44125 16.3842L10.43 16.7692C10.9813 16.8754 11.5538 16.7754 12.035 16.4867L12.615 16.1404C12.4497 16.4682 12.4126 16.8458 12.5108 17.1994C12.609 17.5531 12.8356 17.8574 13.1463 18.0529L17.7088 20.9129C17.915 21.0423 18.1501 21.1184 18.393 21.1344C18.6359 21.1505 18.879 21.1059 19.1005 21.0048C19.3219 20.9037 19.5148 20.7492 19.6618 20.5551C19.8087 20.361 19.9052 20.1335 19.9425 19.8929L21.3063 11.1717ZM13.9263 16.8092L17.7138 13.1779C18.3888 12.5317 17.5713 11.4617 16.77 11.9404L11.28 15.2267C11.1087 15.3288 10.9058 15.3644 10.71 15.3267L8.72125 14.9417L19.3488 10.5479C19.409 10.523 19.4749 10.5145 19.5396 10.5234C19.6042 10.5323 19.6653 10.5583 19.7166 10.5986C19.7679 10.639 19.8075 10.6922 19.8314 10.753C19.8553 10.8137 19.8626 10.8797 19.8525 10.9442L18.49 19.6679L13.9263 16.8092Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 2.5C8.09625 2.5 2.5 8.09625 2.5 15C2.5 21.9037 8.09625 27.5 15 27.5C21.9037 27.5 27.5 21.9037 27.5 15C27.5 8.09625 21.9037 2.5 15 2.5ZM3.97 15C3.97 12.0747 5.13209 9.26914 7.20061 7.20061C9.26914 5.13209 12.0747 3.97 15 3.97C17.9253 3.97 20.7309 5.13209 22.7994 7.20061C24.8679 9.26914 26.03 12.0747 26.03 15C26.03 17.9253 24.8679 20.7309 22.7994 22.7994C20.7309 24.8679 17.9253 26.03 15 26.03C12.0747 26.03 9.26914 24.8679 7.20061 22.7994C5.13209 20.7309 3.97 17.9253 3.97 15Z" fill="white" />
+              </svg>
+            </a>
+            <a class="footer__whatsapp" href="/">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.1075 8.9623C11.3362 8.96855 11.59 8.98105 11.8312 9.51605C11.9912 9.8723 12.26 10.5286 12.48 11.0636C12.6512 11.4798 12.7912 11.8223 12.8262 11.8923C12.9062 12.0523 12.9562 12.2361 12.8512 12.4523L12.8162 12.5248C12.7451 12.693 12.6481 12.8491 12.5287 12.9873L12.35 13.1998C12.2437 13.3298 12.1375 13.4573 12.0475 13.5473C11.8862 13.7073 11.72 13.8798 11.905 14.1998C12.09 14.5198 12.74 15.5723 13.6987 16.4211C14.4 17.0535 15.2046 17.5609 16.0775 17.9211C16.165 17.9586 16.2358 17.9902 16.29 18.0161C16.6112 18.1761 16.8025 18.1511 16.9875 17.9361C17.1737 17.7198 17.7912 16.9998 18.0087 16.6798C18.2187 16.3598 18.4337 16.4098 18.7312 16.5198C19.0287 16.6311 20.6112 17.4073 20.9325 17.5661L21.1112 17.6536C21.335 17.7598 21.4862 17.8336 21.5512 17.9411C21.6312 18.0773 21.6312 18.7161 21.3662 19.4686C21.0937 20.2186 19.7825 20.9386 19.1887 20.9936L19.02 21.0136C18.475 21.0786 17.785 21.1636 15.325 20.1948C12.2925 19.0023 10.2912 16.0448 9.88747 15.4461L9.82122 15.3511L9.81372 15.3411C9.62997 15.0948 8.50372 13.5886 8.50372 12.0336C8.50372 10.5461 9.23747 9.77105 9.57122 9.41855L9.62997 9.35605C9.738 9.23402 9.86999 9.13553 10.0177 9.06671C10.1655 8.9979 10.3258 8.96023 10.4887 8.95605C10.705 8.95605 10.9225 8.95605 11.1075 8.9623Z" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.72998 26.6638C2.70643 26.7485 2.70564 26.838 2.72771 26.9231C2.74977 27.0083 2.7939 27.0861 2.85565 27.1487C2.9174 27.2114 2.99457 27.2566 3.07939 27.2799C3.16421 27.3032 3.25366 27.3036 3.33873 27.2813L9.09748 25.7763C10.9246 26.7659 12.9696 27.2845 15.0475 27.2851H15.0525C21.91 27.2851 27.5 21.7276 27.5 14.8951C27.5042 13.2657 27.1843 11.6519 26.559 10.1473C25.9337 8.64278 25.0153 7.27763 23.8575 6.13131C22.7016 4.97558 21.3286 4.05978 19.8175 3.43659C18.3064 2.8134 16.687 2.49512 15.0525 2.50006C8.19498 2.50006 2.60498 8.05756 2.60498 14.8888C2.60498 17.0626 3.17748 19.1976 4.26748 21.0813L2.72998 26.6638ZM6.07623 21.5788C6.14232 21.3389 6.16 21.0883 6.12824 20.8415C6.09648 20.5947 6.01591 20.3566 5.89123 20.1413C4.96766 18.5448 4.48091 16.7332 4.47998 14.8888C4.47998 9.10131 9.22123 4.37506 15.0525 4.37506C17.89 4.37506 20.5375 5.47131 22.535 7.46006C23.5178 8.43219 24.2972 9.59029 24.8277 10.8668C25.3582 12.1433 25.6292 13.5127 25.625 14.8951C25.625 20.6826 20.8837 25.4101 15.0525 25.4101H15.0462C13.2808 25.4091 11.5435 24.9684 9.99123 24.1276C9.57284 23.9011 9.08399 23.8421 8.62373 23.9626L5.17123 24.8638L6.07623 21.5788Z" fill="white" />
+              </svg>
+            </a>
+          </div>
+          <a class="footer__mail" href="mailto:travkino.vill@mail.ru">travkino.vill@mail.ru</a>
+        </div>
+      </div>
+      <div class="footer__bottom">Icons by <a href="/">icons8</a></div>
+    </div>
+  </footer>
+
+
+
+  <div class="modal-overlay" id="multiStepModal">
+
+    <!-- Вставьте сюда ВАШУ СУЩЕСТВУЮЩУЮ ФОРМУ -->
+    <form class="multi-step-form" id="modalMultiStepForm">
+      <div class="form__above-title">
+        <p>Ответьте на вопросы</p>
+      </div>
+      <h2 class="form__title">и получите список свободных земельных участков</h2>
+      <!-- Прогресс-бар -->
+      <div class="progress-bar">
+        <div class="step step--long active">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+        <div class="step">5</div>
+        <div class="step visually-hidden">6</div>
+
+      </div>
+
+      <!-- Шаг 1 -->
+      <div class="step-content active" id="step1">
+        <h3 class="step-content__title">Выберите тип участка</h3>
+        <div class="options">
+          <label><input class="radio" type="radio" name="full" value="all" required checked>с коммуникациями</label>
+          <label><input class="radio" type="radio" name="full" value="less">до границ участка</label>
+        </div>
+        <div class="buttons">
+          <button class="next-btn" type="button">Далее
+            <span>
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="45" height="45" rx="22.5" fill="#381819" />
+                <path
+                  d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                  fill="white" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Шаг 2 -->
+      <div class="step-content" id="step2">
+        <h3 class="step-content__title">Какого размера участок вам необходим?</h3>
+        <div class="options">
+          <label><input type="radio" name="size" value="10" required checked> 10 соток</label>
+          <label><input type="radio" name="size" value="10-20"> от 10 до 20 соток</label>
+          <label><input type="radio" name="size" value="20+"> Более 20 соток</label>
+        </div>
+        <div class="buttons">
+          <button class="prev-btn">
+            <span>
+              <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.146446 4.03553C-0.0488148 3.84027 -0.0488148 3.52369 0.146446 3.32842L3.32843 0.146442C3.52369 -0.0488198 3.84027 -0.0488198 4.03553 0.146442C4.2308 0.341705 4.2308 0.658287 4.03553 0.853549L1.20711 3.68198L4.03553 6.5104C4.2308 6.70567 4.2308 7.02225 4.03553 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751L0.146446 4.03553ZM25.5 3.68198V4.18198L0.5 4.18198V3.68198V3.18198L25.5 3.18198V3.68198Z"
+                  fill="#381819" />
+              </svg>
+            </span>
+          </button>
+          <button class="next-btn">Далее
+            <span>
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="45" height="45" rx="22.5" fill="#381819" />
+                <path
+                  d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                  fill="white" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- Шаг 3 -->
+      <div class="step-content" id="step3">
+        <h3 class="step-content__title">Возможность покупки сразу нескольких участков рядом друг с другом</h3>
+        <div class="options">
+          <label><input type="radio" name="multiple" value="yes" required checked> Да</label>
+          <label><input type="radio" name="multiple" value="no"> Нет</label>
+        </div>
+        <div class="buttons">
+          <button class="prev-btn">
+            <span>
+              <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.146446 4.03553C-0.0488148 3.84027 -0.0488148 3.52369 0.146446 3.32842L3.32843 0.146442C3.52369 -0.0488198 3.84027 -0.0488198 4.03553 0.146442C4.2308 0.341705 4.2308 0.658287 4.03553 0.853549L1.20711 3.68198L4.03553 6.5104C4.2308 6.70567 4.2308 7.02225 4.03553 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751L0.146446 4.03553ZM25.5 3.68198V4.18198L0.5 4.18198V3.68198V3.18198L25.5 3.18198V3.68198Z"
+                  fill="#381819" />
+              </svg>
+            </span>
+          </button>
+          <button class="next-btn">Далее
+            <span>
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="45" height="45" rx="22.5" fill="#381819" />
+                <path
+                  d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                  fill="white" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Шаг 4 -->
+      <div class="step-content" id="step4">
+        <h3 class="step-content__title">Какой бюджет выделяете на покупку участка?</h3>
+        <div class="options">
+          <label><input type="radio" name="budget" value="3m" required checked> от 3 млн.р.</label>
+          <label><input type="radio" name="budget" value="3-5m"> от 3 до 5 млн.р.</label>
+          <label><input type="radio" name="budget" value="5m+"> Более 5 млн.р.</label>
+        </div>
+        <div class="buttons">
+          <button class="prev-btn">
+            <span>
+              <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.146446 4.03553C-0.0488148 3.84027 -0.0488148 3.52369 0.146446 3.32842L3.32843 0.146442C3.52369 -0.0488198 3.84027 -0.0488198 4.03553 0.146442C4.2308 0.341705 4.2308 0.658287 4.03553 0.853549L1.20711 3.68198L4.03553 6.5104C4.2308 6.70567 4.2308 7.02225 4.03553 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751L0.146446 4.03553ZM25.5 3.68198V4.18198L0.5 4.18198V3.68198V3.18198L25.5 3.18198V3.68198Z"
+                  fill="#381819" />
+              </svg>
+            </span>
+          </button>
+          <button class="next-btn">Далее
+            <span>
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="45" height="45" rx="22.5" fill="#381819" />
+                <path
+                  d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                  fill="white" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Шаг 5 -->
+      <div class="step-content" id="step5">
+        <h3 class="step-content__title">Когда планируете приобретение участка?</h3>
+        <div class="options">
+          <label><input type="radio" name="timeframe" value="soon" required checked> в ближайшее время</label>
+          <label><input type="radio" name="timeframe" value="3m"> в течение 3 месяцев</label>
+          <label><input type="radio" name="timeframe" value="year"> в течение года</label>
+        </div>
+        <div class="buttons">
+          <button class="prev-btn">
+            <span>
+              <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.146446 4.03553C-0.0488148 3.84027 -0.0488148 3.52369 0.146446 3.32842L3.32843 0.146442C3.52369 -0.0488198 3.84027 -0.0488198 4.03553 0.146442C4.2308 0.341705 4.2308 0.658287 4.03553 0.853549L1.20711 3.68198L4.03553 6.5104C4.2308 6.70567 4.2308 7.02225 4.03553 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751L0.146446 4.03553ZM25.5 3.68198V4.18198L0.5 4.18198V3.68198V3.18198L25.5 3.18198V3.68198Z"
+                  fill="#381819" />
+              </svg>
+            </span>
+          </button>
+          <button class="next-btn">Далее
+            <span>
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="45" height="45" rx="22.5" fill="#381819" />
+                <path
+                  d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                  fill="white" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Шаг 6 (финальный) -->
+      <div class="step-content step-content--final" id="step6">
+        <div class="final__above-title"">
+              <p>Благодарим за ответы!</p>
+            </div>
+            <h2 class=" final__title">Мы подготовим для Вас земельные участки <br>по наилучшим ценам. </h2>
+          <div class="final__description">
+            <p>Оставьте свои контактные данные, чтобы мы могли
+              прислать <br> Вам все варианты.</p>
+          </div>
+          <div class="contact-form">
+            <div class="contact-form__inner">
+              <input type="text" name="name" placeholder="Имя" required>
+              <input type="tel" name="phone" placeholder="Телефон" required>
+              <button class="submit-btn">Получить
+                <span>
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="45" height="45" rx="22.5" fill="#381819" />
+                    <path
+                      d="M35.3536 23.3536C35.5488 23.1583 35.5488 22.8417 35.3536 22.6464L32.1716 19.4645C31.9763 19.2692 31.6597 19.2692 31.4645 19.4645C31.2692 19.6597 31.2692 19.9763 31.4645 20.1716L34.2929 23L31.4645 25.8284C31.2692 26.0237 31.2692 26.3403 31.4645 26.5355C31.6597 26.7308 31.9763 26.7308 32.1716 26.5355L35.3536 23.3536ZM10 23V23.5H35V23V22.5H10V23Z"
+                      fill="white" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <label class="agreement"><input class="checkbox" type="checkbox" name="yes" required> Я соглашаюсь с
+              условиями
+              <a class="policy" href="/">обработки персональных данных</a></label>
+          </div>
+          <div class="final__bottom">
+            <p>
+              Выбирая <span>Травкино Village,</span> вы выбираете комфорт, экологию
+              <br>и свободу от городских стрессов!
+            </p>
+          </div>
+        </div>
+
+    </form>
+  </div>
+
+  <dialog class="mobile-overlay" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button class="mobile-overlay__close-button cross-button" type="submit">
+        <span class="visually-hidden">Close navigation menu</span>
+      </button>
+    </form>
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="/">About us</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="/">Services</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="/">Use Cases</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="/">Pricing</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="/">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </dialog>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
